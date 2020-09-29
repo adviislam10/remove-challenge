@@ -36,13 +36,20 @@ function draw() {
 //Remove Function
 document.addEventListener('keydown', keydownHandler);
 
-
-
 function keydownHandler(event) {
 
     if (event.code == 'Digit1') {
         for (let i = 0; i < myArray.length; i++) {
-            myArray.splice
+            if (myArray[i] === 400) {
+                myArray[i] = 0
+            }
+        }
+    }
+    if (event.code == 'Digit2') {
+        for (let i = 0; i < myArray.length; i++) {
+            if (myArray[i] === 200) {
+                myArray[i] = 0
+            }
         }
     }
 }
