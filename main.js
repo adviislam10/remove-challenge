@@ -41,14 +41,13 @@ function keydownHandler(event) {
     if (event.code == 'Digit1') {
         for (let i = 0; i < myArray.length; i++) {
             if (myArray[i] === 400) {
-                myArray[i] = 0
+                myArray.splice(i, 1)
             }
         }
-    }
-    if (event.code == 'Digit2') {
+    } else if (event.code == 'Digit2') {
         for (let i = 0; i < myArray.length; i++) {
             if (myArray[i] === 200) {
-                myArray[i] = 0
+                myArray.splice(i, 1)
             }
         }
     }
