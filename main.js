@@ -47,7 +47,7 @@ function keydownHandler(event) {
     } else if (event.code == 'Digit2') {
         for (let i = 0; i < myArray.length; i++) {
             if (myArray[i] === 200) {
-                myArray.splice(i, 1)
+                myArray.splice(i--, 1)
             }
         }
     }
